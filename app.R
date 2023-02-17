@@ -1,24 +1,26 @@
+#change date to   dateInput("date", label = h3("Date input"), value = "2014-01-01"),
+
+
 
 library(shiny)
 
 source('utils.R')
 
-necessary_packages <-
-  c(
-    "sf",
-    "htmltools",
-    "htmlwidgets",
-    "RColorBrewer",
-    "leaflet",
-    "tidyverse",
-    'maps',
-    'mapdata',
-    'maptools',
-    "rgeos",
-    'lubridate',
-    'zoo',
-    'colorspace'
-  )
+necessary_packages <- c(
+  "sf",
+  "htmltools",
+  "htmlwidgets",
+  "RColorBrewer",
+  "leaflet",
+  "tidyverse",
+  'maps',
+  'mapdata',
+  'maptools',
+  "rgeos",
+  'lubridate',
+  'zoo',
+  'colorspace'
+)
 
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(necessary_packages, character.only = T)
